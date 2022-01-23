@@ -1,6 +1,6 @@
 import math
 
-def get_data(path:str) -> list:
+def get_data(path):
     with open(path) as file:
         lines = file.readlines()
     a = ''
@@ -12,7 +12,7 @@ def get_data(path:str) -> list:
 data = get_data(r'D:\Duke\821\basic python\example.txt')
 print(data)
 
-def analyze_data(nums:list, command:str) -> float:
+def analyze_data(nums, command):
 
     if command == "average":
         avg = sum(nums)/len(nums)
